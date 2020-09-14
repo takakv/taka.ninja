@@ -2,7 +2,7 @@
 @font-face {
   font-family: Suisse;
   src: url(../fonts/SuisseIntl-Regular-WebM.woff2) format("woff2"),
-  url(../fonts/SuisseIntl-Regular-WebM.woff) format("woff");
+    url(../fonts/SuisseIntl-Regular-WebM.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 @font-face {
   font-family: Suisse;
   src: url(../fonts/SuisseIntl-Bold-WebM.woff2) format("woff2"),
-  url(../fonts/SuisseIntl-Bold-WebM.woff) format("woff");
+    url(../fonts/SuisseIntl-Bold-WebM.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -81,5 +81,22 @@ figure img {
 }
 
 // General
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Suisse, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+  color: #323232;
+  background: #fff;
+}
 
 // Landing
