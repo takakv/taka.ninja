@@ -5,3 +5,6 @@
 
 # Fonts
 fonts/
+
+# Non structural / design images
+*.psl*

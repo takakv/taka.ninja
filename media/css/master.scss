@@ -16,7 +16,8 @@
 }
 
 // Mixins
-$max-content-width: 46.250em;
+$max-content-width: 46.25em;
+$tablet-break: 700px;
 
 // Variables and colours
 :root {
@@ -124,7 +125,6 @@ body {
 }
 
 // Header
-
 .tk-main-heading {
   position: relative;
   margin-top: 1em;
@@ -193,14 +193,37 @@ body {
 }
 
 // Landing
-
 .profile {
   &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $tablet-break) {
+      flex-direction: column;
+      &__text {
+        order: 2;
+      }
+    }
+  }
+
+  &-heading {
     font-size: 1.5rem;
   }
 
   &-tagline {
     font-size: 1.125rem;
+  }
+
+  &-picture {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    padding-bottom: 2em;
+    border: 3px solid var(--primary-text);
+    @media screen and (min-width: $tablet-break) {
+      padding-bottom: 0;
+    }
   }
 
   &-description {
