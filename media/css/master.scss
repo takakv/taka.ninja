@@ -132,6 +132,11 @@ body {
   }
 }
 
+::selection,
+::-moz-selection {
+  background-color: var(--primary-purple);
+}
+
 // Header
 .tk-main-heading {
   position: relative;
@@ -179,6 +184,18 @@ body {
 
       a {
         color: #fff;
+
+        &.green {
+          color: var(--primary-green);
+        }
+
+        &.red {
+          color: var(--primary-red);
+        }
+
+        &.yellow {
+          color: var(--primary-yellow);
+        }
       }
     }
   }
