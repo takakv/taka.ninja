@@ -2,7 +2,7 @@
 @font-face {
   font-family: Suisse;
   src: url(../fonts/SuisseIntl-Regular-WebM.woff2) format("woff2"),
-  url(../fonts/SuisseIntl-Regular-WebM.woff) format("woff");
+    url(../fonts/SuisseIntl-Regular-WebM.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -10,9 +10,14 @@
 @font-face {
   font-family: Suisse;
   src: url(../fonts/SuisseIntl-Bold-WebM.woff2) format("woff2"),
-  url(../fonts/SuisseIntl-Bold-WebM.woff) format("woff");
+    url(../fonts/SuisseIntl-Bold-WebM.woff) format("woff");
   font-weight: 700;
   font-style: normal;
+}
+
+// Colours
+:root {
+  --primary-text: #323232;
 }
 
 // Resets and defaults
@@ -101,7 +106,8 @@ body {
   line-height: 1.5;
   min-width: 300px;
   min-height: 100vh;
-  color: #323232;
+  padding: 25px;
+  color: var(--primary-text);
   background: #fff;
 }
 
@@ -111,11 +117,21 @@ body {
   margin: 0 5vw;
 }
 
+.page-wrap {
+  padding-bottom: 30px;
+  border: 5px solid var(--primary-text);
+}
+
 // Header
 
 .tk-main-heading {
   &__title {
-    padding: 40px 5vw 0;
+    position: absolute;
+    margin-left: 10px;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    border: 2px solid var(--primary-text);
+    background-color: #fff;
   }
 
   &__link {
