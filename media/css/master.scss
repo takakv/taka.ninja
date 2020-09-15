@@ -196,11 +196,13 @@ body {
 .profile {
   &-header {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 
     @media screen and (max-width: $tablet-break) {
+      align-items: center;
       flex-direction: column;
+
       &__text {
         order: 2;
       }
@@ -219,10 +221,10 @@ body {
     display: flex;
     justify-content: center;
     width: 10em;
-    padding-bottom: 2em;
+    margin-bottom: 2em;
     border: 3px solid var(--primary-text);
     @media screen and (min-width: $tablet-break) {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
