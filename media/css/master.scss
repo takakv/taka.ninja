@@ -1,4 +1,6 @@
 // Fonts
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+
 @font-face {
   font-family: Suisse;
   src: url(../fonts/SuisseIntl-Regular-WebM.woff2) format("woff2"),
@@ -99,7 +101,7 @@ figure img {
 
 // Themes and customisations
 .t-jp {
-  font-family: "Sawarabi Gothik", Hiragino, Meiryo, sans-serif;
+  font-family: "Sawarabi Gothic", Hiragino, Meiryo, sans-serif;
 }
 
 // General
@@ -153,13 +155,9 @@ body {
   }
 
   &__title {
-    position: relative;
     z-index: 2;
-    display: inline-block;
     overflow: hidden;
-    padding: 0 20px;
     transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 3px solid var(--mono-dark);
     background-color: #fff;
 
     &::after {
@@ -203,9 +201,12 @@ body {
   &__link {
     position: relative;
     z-index: 3;
+    display: block;
+    padding: 0 20px;
     transition: color 140ms linear 140ms;
     text-decoration: none;
     color: inherit;
+    border: 3px solid var(--mono-dark);
   }
 
   &__bar {
