@@ -17,7 +17,7 @@
 
 // Mixins
 $max-content-width: 46.25em;
-$tablet-break: 700px;
+$tablet-break: 550px;
 
 // Variables and colours
 :root {
@@ -196,13 +196,9 @@ body {
 .profile {
   &-header {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
 
     @media screen and (max-width: $tablet-break) {
-      align-items: center;
-      flex-direction: column;
-
       &__text {
         order: 2;
       }
@@ -218,9 +214,6 @@ body {
   }
 
   &-picture {
-    display: flex;
-    justify-content: center;
-    width: 10em;
     margin-bottom: 2em;
     border: 3px solid var(--primary-text);
     @media screen and (min-width: $tablet-break) {
