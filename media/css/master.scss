@@ -106,7 +106,6 @@ body {
   line-height: 1.5;
   min-width: 300px;
   min-height: 100vh;
-  padding: 25px;
   color: var(--primary-text);
   background: #fff;
 }
@@ -117,20 +116,19 @@ body {
   margin: 0 5vw;
 }
 
-.page-wrap {
-  padding-bottom: 30px;
-  border: 5px solid var(--primary-text);
-}
-
 // Header
 
 .tk-main-heading {
+  position: relative;
+  margin-top: 1em;
+
   &__title {
-    position: absolute;
-    margin-left: 10px;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0 5vw;
     padding: 0 20px;
-    transform: translateY(-50%);
-    border: 2px solid var(--primary-text);
+    border: 3px solid var(--primary-text);
     background-color: #fff;
   }
 
@@ -141,6 +139,14 @@ body {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__bar {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary-text);
   }
 }
 
