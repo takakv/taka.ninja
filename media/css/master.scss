@@ -147,14 +147,6 @@ body {
 .tk-main-heading {
   position: relative;
 
-  &-wrapper {
-    @media screen and (min-width: $max-content-width) {
-      max-width: $max-content-width;
-      margin: 0 auto;
-      padding: 0 5.25em;
-    }
-  }
-
   &__breadcrumbs {
     font-family: "Suisse Int'l Mono", "Suisse Int'l", monospace;
     font-size: 1.5rem;
@@ -218,5 +210,6 @@ body {
 }
 
 .section-title {
+  font-family: "Suisse Int'l Mono", monospace;
   font-size: 2rem;
 }
