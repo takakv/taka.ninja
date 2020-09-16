@@ -1,26 +1,24 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css2?family=Kosugi&display=swap");
-
 @font-face {
-  font-family: Suisse;
+  font-family: "Suisse Int'l";
   src: url(../fonts/SuisseIntl-Regular-WebS.woff2) format("woff2"),
-  url(../fonts/SuisseIntl-Regular-WebS.woff) format("woff");
+    url(../fonts/SuisseIntl-Regular-WebS.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Suisse;
+  font-family: "Suisse Int'l";
   src: url(../fonts/SuisseIntl-Bold-WebS.woff2) format("woff2"),
-  url(../fonts/SuisseIntl-Bold-WebS.woff) format("woff");
+    url(../fonts/SuisseIntl-Bold-WebS.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Suisse Mono";
+  font-family: "Suisse Int'l Mono";
   src: url(../fonts/SuisseIntlMono-Bold-WebS.woff2) format("woff2"),
-  url(../fonts/SuisseIntlMono-Bold-WebS.woff) format("woff");
+    url(../fonts/SuisseIntlMono-Bold-WebS.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -108,9 +106,6 @@ figure img {
 }
 
 // Themes and customisations
-.t-jp {
-  font-family: "Kosugi", Hiragino, Meiryo, sans-serif;
-}
 
 // General
 html {
@@ -122,7 +117,7 @@ html {
 }
 
 body {
-  font-family: Suisse, sans-serif;
+  font-family: "Suisse Int'l", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -161,6 +156,7 @@ body {
   }
 
   &__breadcrumbs {
+    font-family: "Suisse Int'l Mono", "Suisse Int'l", monospace;
     font-size: 1.5rem;
     font-weight: 700;
     position: relative;
@@ -170,62 +166,6 @@ body {
     padding: 0 10px;
     text-transform: uppercase;
     background-color: #fff;
-    font-family: "Suisse Mono", monospace;
-  }
-
-  &__title {
-    z-index: 2;
-    overflow: hidden;
-    transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color: #fff;
-
-    &::after {
-      position: absolute;
-      top: -10%;
-      left: 0;
-      display: block;
-      width: 200px;
-      height: 200px;
-      content: "";
-      transition: 280ms linear 0ms;
-      transform: rotate(45deg) translate(-120%, 65%) scale(0);
-      background-color: var(--chroma-dark);
-    }
-
-    &:hover {
-      transform: scale(1.1);
-
-      &::after {
-        transform: rotate(45deg) translate(-50%, 0) scale(1);
-      }
-
-      a {
-        color: #fff;
-
-        &.green {
-          color: var(--primary-green);
-        }
-
-        &.red {
-          color: var(--primary-red);
-        }
-
-        &.yellow {
-          color: var(--primary-yellow);
-        }
-      }
-    }
-  }
-
-  &__link {
-    position: relative;
-    z-index: 3;
-    display: block;
-    padding: 0 20px;
-    transition: color 140ms linear 140ms;
-    text-decoration: none;
-    color: inherit;
-    border: 3px solid var(--mono-dark);
   }
 
   &__bar {
