@@ -1,18 +1,26 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&display=swap");
 
 @font-face {
   font-family: Suisse;
-  src: url(../fonts/SuisseIntl-Regular-WebM.woff2) format("woff2"),
-    url(../fonts/SuisseIntl-Regular-WebM.woff) format("woff");
+  src: url(../fonts/SuisseIntl-Regular-WebS.woff2) format("woff2"),
+  url(../fonts/SuisseIntl-Regular-WebS.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Suisse;
-  src: url(../fonts/SuisseIntl-Bold-WebM.woff2) format("woff2"),
-    url(../fonts/SuisseIntl-Bold-WebM.woff) format("woff");
+  src: url(../fonts/SuisseIntl-Bold-WebS.woff2) format("woff2"),
+  url(../fonts/SuisseIntl-Bold-WebS.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse Mono";
+  src: url(../fonts/SuisseIntlMono-Bold-WebS.woff2) format("woff2"),
+  url(../fonts/SuisseIntlMono-Bold-WebS.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -119,6 +127,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   min-width: 300px;
+  padding-top: 1.5em;
   color: var(--primary-text);
   background: #fff;
 }
@@ -142,16 +151,26 @@ body {
 // Header
 .tk-main-heading {
   position: relative;
-  margin-top: 1em;
 
   &-wrapper {
-    display: flex;
-    margin-left: 5vw;
     @media screen and (min-width: $max-content-width) {
       max-width: $max-content-width;
       margin: 0 auto;
       padding: 0 5.25em;
     }
+  }
+
+  &__breadcrumbs {
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    left: -10px;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-family: "Suisse Mono", monospace;
   }
 
   &__title {
@@ -211,9 +230,10 @@ body {
 
   &__bar {
     position: absolute;
-    top: 30%;
+    top: 50%;
     width: 100%;
     height: 5px;
+    transform: translateY(-50%);
     background-color: var(--mono-dark);
   }
 }
