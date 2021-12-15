@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Taka's Space</title>
-    <meta
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Taka's Space</title>
+  <meta
       content="An undergrad cybersecurity student at Tallinn University of Technology throwing together bits and pieces if he's feeling like it."
       name="description"
-    />
-    <link href="media/css/master.css" rel="stylesheet" type="text/css" />
-    <script defer="defer" src="media/js/main.js" type="module"></script>
-    <!-- Allow support for JS only styles -->
-    <script>
-      document.documentElement.classList.replace("no-js", "js");
-    </script>
-  </head>
-  <body class="landing">
-    <header class="tk-main-heading">
-      <div class="tk-main-heading__bar"></div>
-      <div class="o-bleed">
-        <span class="tk-main-heading__breadcrumbs">/</span>
+  />
+  <link href="media/css/master.min.css" rel="stylesheet" type="text/css"/>
+  <script defer="defer" src="media/js/main.js" type="module"></script>
+  <!-- Allow support for JS only styles -->
+  <script>
+    document.documentElement.classList.replace("no-js", "js");
+  </script>
+</head>
+<body class="landing">
+<header class="tk-main-heading">
+  <div class="tk-main-heading__bar"></div>
+  <div class="o-bleed">
+    <span class="tk-main-heading__breadcrumbs">/</span>
+  </div>
+</header>
+<main class="landing-content">
+  <section class="landing-section profile">
+    <div class="o-bleed">
+      <div class="profile-header">
+        <div class="profile-header__text">
+          <h1 class="profile-heading">Hi. I'm Taka,</h1>
+          <h2 class="profile-tagline">
+            a student, cosmopolite, and cryptography enthusiast.
+          </h2>
+        </div>
+        <img
+            alt="Taka's face"
+            class="profile-picture"
+            src="media/images/taka_textured.psl.jpg"
+        />
       </div>
-    </header>
-    <main class="landing-content">
-      <section class="landing-section profile">
-        <div class="o-bleed">
-          <div class="profile-header">
-            <div class="profile-header__text">
-              <h1 class="profile-heading">Hi. I'm Taka,</h1>
-              <h2 class="profile-tagline">
-                a student, cosmopolite, and cryptoprivacy enthusiast.
-              </h2>
-            </div>
-            <img
-              alt="Taka's face"
-              class="profile-picture"
-              src="media/images/taka_textured.psl.jpg"
-            />
-          </div>
-          <p class="profile-description">
-            I am currently following the cybersecurity bachelor's programme at
-            Tallinn University of Technology (TalTech).
-          </p>
-          <p class="profile-description">
-            "Taka" is a nickname gotten from the contraction of my first and
-            last name.
-          </p>
-        </div>
-      </section>
-      <section class="landing-section projects">
-        <div class="o-bleed">
-          <h3 class="section-title">Projects</h3>
-          <p>
-            I will link some projects here if there are any publication worthy
-            ones in the future. Certainly nothing from the past...
-          </p>
-        </div>
-      </section>
-      <section class="landing-section materials">
-        <div class="o-bleed">
-          <h3 class="section-title">Materials</h3>
-          <p>
-            While I have of course taken plenty of notes over my time studying,
-            sadly none of them are fluid or structured enough to make sense to
-            be uploaded...yet. Naturally, I cannot upload official materials
-            either.
-          </p>
-        </div>
-      </section>
-      <section class="landing-section programming">
-        <div class="o-bleed">
-          <h3 class="section-title">Programming</h3>
-          <p>
-            I am no programmer and most definitely not a developer. However,
-            when I do code, I tend to use C, C# or Golang.
-          </p>
-        </div>
-      </section>
-    </main>
-  </body>
+      <p class="profile-description">
+        I am currently following the cybersecurity bachelor's programme at
+        Tallinn University of Technology (TalTech), with a focus on cryptography and digital forensics.
+      </p>
+      <p class="profile-description">
+        "Taka" is a nickname gotten from the contraction of my first and
+        last name.
+      </p>
+    </div>
+  </section>
+  <section class="landing-section links">
+    <div class="o-bleed">
+      <h3 class="section-title">Links</h3>
+      <ul>
+        <li><a href="https://github.com/takakv">GitHub</a></li>
+        <li><a href="https://takakv.com">My Blog</a></li>
+        <li><a href="https://www.linkedin.com/in/taanielk/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="landing-section projects">
+    <div class="o-bleed">
+      <h3 class="section-title">Projects</h3>
+      <p><a href="https://merelaager.ee">Merelaager</a>'s website and its backend.</p>
+      <p>Zahlen, a bare-bones arbitrary precision library in C# as part of a crypto-algorithms testing
+        project.</p>
+      <p>Tako, an event management platform I wrote for a university project with my good friend Slava.</p>
+      <p>An MD5 hashing algorithm implementation in C, following the specification and without external
+        libraries.</p>
+      <p>All projects (except for Tako) are open source and their source available on GitHub.</p>
+    </div>
+  </section>
+  <section class="landing-section materials">
+    <div class="o-bleed">
+      <h3 class="section-title">Materials</h3>
+      <p>
+        While I have of course taken plenty of notes over my time studying,
+        sadly none of them are fluid or structured enough to make sense to
+        be uploaded...yet. Naturally, I cannot upload official materials
+        either.
+      </p>
+    </div>
+  </section>
+  <section class="landing-section programming">
+    <div class="o-bleed">
+      <h3 class="section-title">Programming</h3>
+      <p>
+        I am no programmer and most definitely not a developer. However,
+        when I do code, I tend to use C#, C or Golang.
+      </p>
+    </div>
+  </section>
+</main>
+</body>
 </html>

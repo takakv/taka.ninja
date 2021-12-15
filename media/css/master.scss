@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Suisse Int'l";
   src: url(../fonts/SuisseIntl-Regular-WebS.woff2) format("woff2"),
-    url(../fonts/SuisseIntl-Regular-WebS.woff) format("woff");
+  url(../fonts/SuisseIntl-Regular-WebS.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Suisse Int'l";
   src: url(../fonts/SuisseIntl-Bold-WebS.woff2) format("woff2"),
-    url(../fonts/SuisseIntl-Bold-WebS.woff) format("woff");
+  url(../fonts/SuisseIntl-Bold-WebS.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 @font-face {
   font-family: "Suisse Int'l Mono";
   src: url(../fonts/SuisseIntlMono-Bold-WebS.woff2) format("woff2"),
-    url(../fonts/SuisseIntlMono-Bold-WebS.woff) format("woff");
+  url(../fonts/SuisseIntlMono-Bold-WebS.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -125,6 +125,18 @@ body {
   padding-top: 1.5em;
   color: var(--primary-text);
   background: #fff;
+}
+
+ul {
+  list-style: square;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: var(--primary-blue);
+  }
 }
 
 .o-bleed {
